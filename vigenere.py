@@ -35,5 +35,6 @@ print " Cipher: " + cipher
 print "Message: " + message
 
 # TODO: bruteforce aller möglichkeiten, in Datei schreiben
+# test
 
 cipherFile.close()
