@@ -1,4 +1,15 @@
+lectures
+========
+
+Here I will collect programs and scripts which are related to my courses.
+
+
 cryptography
 ============
 
-Here I will collect algorithms and programs for my course "Sicherheit" (Security) in SS13.
+My course "Sicherheit" (Security) in SS13
+
+kogsys
+======
+
+My course "Kognitive Systeme" (Kognitive Systems) in SS13
