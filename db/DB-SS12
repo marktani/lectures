@@ -1,0 +1,90 @@
+Aufgabe 1 a:
+(w = ableitbar, f = nicht ableitbar, mit Grund)
+1 DI -> BCDEFI          f   kein F
+2 BDG -> ABCDEFHH       w
+3 DHI -> ACDGI          f   kein A
+4 BCDEGI -> ABCDEFGHI   w
+5 AF -> ABCEGH          w
+6 ABCDE -> ABCEFHI      f   kein I
+7 DI -> CFGI            f   kein C
+8 ADFI -> BCDEFGHI      w
+9 GI -> BDEFG           f   kein B
+
+Aufgabe 1 b:
+{{I, A}, {I, B}, {I, C}}
+1NF, da I -> H partielle Abhängigkeit und somit 2NF nicht erfüllt
+
+Aufgabe 1 c:
+F(2) = {
+    A -> B,
+    AI -> \delta,
+    B -> C, B -> D,
+    C -> A, C -> D, C -> F,
+    D -> E, D -> F, D -> G, D -> H,
+    F -> G,
+    I -> H
+}
+
+F(3) = {
+    A -> B,
+    AI -> \delta,
+    B -> C, B -> D,
+    C -> A,
+    D -> E, D -> F, D -> H,
+    F -> G,
+    I -> H
+} aufgelöst wurden wie folgt:
+                redundant durch
+    C -> D      C -> A, A -> B, B -> D
+    C -> F      C -> A, A -> B, B -> D, D -> F
+    D -> G      D -> F, F -> G
+    
+ergibt Zerlegung R = {({A, I}, {{A, I}}), ({A, B}, {{A}}), ({B, C, D}, {{B}}), ({C, A}, {{C}}), ({D, E, F, H}, {{D}}, ({F, G}, {{F}}), ({I, H}, {{I}})}
+
+Anmerkung: Weder F(3) noch R sind eindeutig. (Aber: aus F3 folgt R)
+
+Aufgabe 2 b:
+CREATE VIEW FriendshipSymmetric AS
+SELECT person1, person2 FROM Friendship
+UNION
+SELECT person2 AS person1, person1 AS person2 FROM Friendship
+
+Aufgabe 2 c:
+Version A:
+    SELECT f1.person2, f2.person2 FROM FriendshipSymmetric f1
+    JOIN FriendshipSymmetric f2 ON f1.person1 = f2.person1
+    LEFT JOIN FriendshipSymmetric f3 ON f1.person2 = f3.person1 AND f2.person2 = f3.person2
+    WHERE f1.person2 != f2.person2
+    AND f1.person1 = <id>
+    AND p3.person1 IS NULL AND p3.person2 IS NULL
+
+Version B:
+    SELECT f1.person2, f2.person2 FROM
+        (SELECT person2 FROM FriendshipSymmetric WHERE person1 = <id>) f1
+        JOIN ON
+        (SELECT person2 FROM FriendshipSymmetric WHERE person1 = <id>) f2
+        EXCEPT
+        (SELECT * FROM FriendshipSymmetric)
+    WHERE f1.person2 != f2.person2
+    
+Aufgabe 3 a:
+H1: es gibt folgende Kanten:
+    (12, xyz), (13, xy), (23, y), (32, y).
+    Somit ist ein Zykel zwischen 2 und 3 -> nicht serialisierbar
+
+H2: (21, xyz), (23, y), (31, xy).
+    Somit keine Zykel und serialisierbar
+    
+Aufgabe 3 b und c:
+(Y = erfüllt, N = nicht erfüllt)
+H1:
+T3 reads y from T2 NN
+T2 reads x from T3 YN
+T2 reads z from T1 YN
+T3 reads x from T1 YN
+
+H2:
+T1 reads y from T3 YN
+
+H1 ist nicht rücksetzbar (also weder in RC, ACA oder ST)
+H2 ist in RC (also nicht in ACA oder ST)
