@@ -1,7 +1,7 @@
 """Simple webapp2 server."""
 
 import webapp2
-import html_util
+import html_util, rot13, signup
 
 form = """
 <form method="post">
@@ -27,7 +27,7 @@ class MainPage(webapp2.RequestHandler):
 			"month": html_util.escape_html(month),
 			"day": html_util.escape_html(day),
 			"year": html_util.escape_html(year)
-			})
+		})
 
 	def get(self):
 		self.write_form()
@@ -53,6 +53,9 @@ class ThanksHandler(webapp2.RequestHandler):
 
 application = webapp2.WSGIApplication([
 	('/', MainPage),
-	('/thanks', ThanksHandler)
+	('/thanks', ThanksHandler),
+	('/unit2/rot13', rot13.Rotation13Handler),
+	('/unit2/signup', signup.SignUpHandler),
+	('/unit2/welcome', signup.WelcomeHandler)
 ], debug=True)
 
