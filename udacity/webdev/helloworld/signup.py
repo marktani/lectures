@@ -120,7 +120,7 @@ class WelcomeHandler(webapp2.RequestHandler):
 
 	def get(self):
 		username = html_util.escape_html(self.request.get('username'))
-		if (username == ""):
+		if (username == "" or not html_util.valid_username(username)):
 			self.redirect('/unit2/signup')
 		else:
 			self.write_form(username)
