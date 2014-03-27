@@ -27,7 +27,7 @@ class Rotation13Handler(webapp2.RequestHandler):
 	def post(self):
 		user_text = self.request.get('text')
 		code = html_util.rot13(user_text)
-		self.write_form(html_util.escape_html(code))
+		self.write_form(code)
 
 if __name__ == "main":
 	print rot13("halo")
