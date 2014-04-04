@@ -12,4 +12,12 @@ My course "Sicherheit" (Security) in SS13
 kogsys
 ======
 
-My course "Kognitive Systeme" (Kognitive Systems) in SS13
+My course "Kognitive Systeme" (Cognitive Systems) in SS13
+
+pp
+======
+My course "Programmierparadigmen" (Programming paradigms) in WS1314
+
+udacity
+======
+Collection for udacity courses.

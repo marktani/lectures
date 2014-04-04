@@ -3,19 +3,115 @@
 	{
 		"selected_items":
 		[
+			[
+				"re",
+				"request"
+			],
+			[
+				"us",
+				"usernameInvalid"
+			],
+			[
+				"userna",
+				"username"
+			],
+			[
+				"write",
+				"write_form"
+			],
+			[
+				"em",
+				"emailInvalid"
+			],
+			[
+				"user_",
+				"user_pw"
+			],
+			[
+				"pw",
+				"pwInvalid"
+			],
+			[
+				"username",
+				"usernameInvalid"
+			],
+			[
+				"user",
+				"user_username"
+			],
+			[
+				"va",
+				"valid_username"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"wr",
+				"write_form"
+			],
+			[
+				"Tha",
+				"ThanksHandler"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "nilan-kit/app.yaml",
+			"settings":
+			{
+				"buffer_size": 138,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nilan-kit/html_util.py",
+			"settings":
+			{
+				"buffer_size": 1566,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nilan-kit/nilan-kit.py",
+			"settings":
+			{
+				"buffer_size": 1665,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nilan-kit/rot13.py",
+			"settings":
+			{
+				"buffer_size": 671,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "nilan-kit/signup.py",
+			"settings":
+			{
+				"buffer_size": 3183,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 348.0,
 		"selected_items":
 		[
+			[
+				"Snippet: ",
+				"Snippet: self"
+			]
 		],
-		"width": 0.0
+		"width": 392.0
 	},
 	"console":
 	{
@@ -32,12 +128,22 @@
 	},
 	"file_history":
 	[
+		"/home/kepler/projects/uni/lectures/udacity/webdev/helloworld/signup.py",
+		"/home/kepler/projects/uni/lectures/udacity/webdev/helloworld/html_util.py",
+		"/home/kepler/projects/uni/lectures/udacity/webdev/helloworld/rot13.py",
+		"/home/kepler/projects/uni/lectures/udacity/webdev/helloworld/helloworld.py",
+		"/home/kepler/projects/uni/lectures/udacity/webdev/webdev.sublime-project",
+		"/home/kepler/projects/uni/lectures/udacity/webdev/helloworld/testrot.py",
+		"/home/kepler/projects/uni/lectures/udacity/webdev/lesson2.html",
+		"/home/kepler/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/kepler/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/kepler/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/kepler/Desktop/lesson2.html",
 		"/home/kepler/.config/sublime-text-2/Packages/User/HTML.sublime-settings"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -51,6 +157,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"+",
+			"year",
+			">\n",
+			"html_util",
+			"date_validation",
+			"None",
+			"text",
+			"\">\n",
+			"response",
+			">\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -68,8 +184,141 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "nilan-kit/app.yaml",
+					"settings":
+					{
+						"buffer_size": 138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "nilan-kit/html_util.py",
+					"settings":
+					{
+						"buffer_size": 1566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "nilan-kit/nilan-kit.py",
+					"settings":
+					{
+						"buffer_size": 1665,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1498,
+								1498
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 731.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "nilan-kit/rot13.py",
+					"settings":
+					{
+						"buffer_size": 671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								189
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "nilan-kit/signup.py",
+					"settings":
+					{
+						"buffer_size": 3183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3137,
+								3137
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
