@@ -1,4 +1,4 @@
-SOURCE = haskell-cheat-sheet
+SOURCE = prolog-cheat-sheet
 
 make:
 	pdflatex -shell-escape $(SOURCE).tex -output-format=pdf 
